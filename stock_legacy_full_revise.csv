@@ -1,0 +1,67 @@
+id,titre_jeu,plateforme,annee_sortie,etat,emplacement,valeur_estimee,prix_achat
+1,Super Mario 64,Nintendo 64,1996,Neuf,Etagere A,50€,15€
+2,The Legend of Zelda: Ocarina of Time,N64,1998,Boite abimée,Etagere A,75€,20€
+3,Sonic The Hedgehog,Sega Mega Drive,1991,Bon état,Etagere B,30€,5€
+4,Final Fantasy VII,PlayStation 1,1997,Neuf,Vitrine 1,120€,45€
+5,Super Mario 64,Nintendo 64,1996,Neuf,Stock,50€,15€
+6,Street Fighter II,SNES,1992,Sans notice,Etagere D,45€,10€
+7,Tetris,Game Boy,1989,Bon état,Caisse 2,NULL,5€
+8,Metal Gear Solid,Ps1,1998,Neuf,Vitrine 1,60€,20€
+9,Chrono Trigger,Super Nintendo,1995,Neuf,Coffre-fort,300€,80€
+10,Castlevania: Symphony of the Night,PlayStation,1997,Bon état,Etagere A,150€,50€
+11,Alex Kidd in Miracle World,Master System,1986,Moyen,Etagere B,20€,5€
+12,Pokemon Rouge,GameBoy,1996,Bon état,Caisse 2,40€,15€
+13,GoldenEye 007,Nintendo 64,1997,Neuf,Etagere F,55€,20€
+14,Shenmue,Dreamcast,1999,Neuf,Vitrine 2,80€,30€
+15,Half-Life,PC,1998,Bon état,Reserve,15€,2€
+16,Super Mario Bros 3,NES,1988,Abimé,Etagere A,35€,10€
+17,Resident Evil,PlayStation 1,1996,Bon état,Etagere G,45€,15€
+18,Sonic The Hedgehog,Sega Mega Drive,1991,Bon état,Etagere B,30€,8€
+19,Donkey Kong Country,SNES,1994,Neuf,Etagere A,40€,15€
+20,Pac-Man,Arcade,1980,Cabinet,Entrée,"1,355€","271,1€"
+21,Grand Theft Auto,PS1,1997,Rayé,Stock,25€,5€
+22,Halo: Combat Evolved,Xbox,2001,Excellent,Etagere H,15€,5€
+23,Super Metroid,SNES,1994,Boîte manquante,Etagere A,120€,40€
+24,Final Fantasy VII,PSX,1997,Neuf,Stock,120€,40€
+25,Crash Bandicoot,Playstation,1996,Bon,Etagere C,30€,10€
+26,Pokemon Bleu,Game Boy,1999,Détaché,Caisse 2,35€,10€
+27,Zelda: A Link to the Past,Super Nintendo,1991,Usé,Etagere A,NULL,10€
+28,Earthworm Jim,Megadrive,1994,Bon état,Etagere B,40€,15€
+29,Silent Hill,PS1,1999,Neuf,Vitrine 1,80€,25€
+30,Super Smash Bros Melee,GameCube,2001,Rayé,Etagere H,35€,10€
+31,Ico,PlayStation 2,2001,Neuf,Etagere C,40€,15€
+32,Shadow of the Colossus,PS2,2005,Excellent,Etagere C,35€,12€
+33,Street Fighter 2,Super Famicom,1992,Jauni,Stock,"18,97€","2,71€"
+34,Conker's Bad Fur Day,N64,2001,Neuf,Coffre-fort,200€,60€
+35,Tomb Raider,Saturn,1996,Bon état,Etagere B,30€,10€
+36,Crazy Taxi,Dreamcast,1999,Comme neuf,Etagere F,40€,15€
+37,Mario Kart 64,Nintendo 64,1997,Sans boîte,Etagere A,35€,12€
+38,Pokemon Or,Gameboy Color,2000,Pile HS,Caisse 2,45€,15€
+39,Duck Hunt,NES,1984,Bon,Stock,10e,2€
+40,Mega Man 2,NES,1988,Abîmé ,Etagere A,50€,15€
+41,Gran Turismo,Playstation 1,1997,Platinum,Etagere C,10€,2€
+42,SoulCalibur,Dreamcast,1999,Neuf,Vitrine 2,40€,15€
+43,Diablo II,PC,2000,Grosse Boîte,Reserve,60€,10€
+44,Portal 2,PS3,2011,Neuf,Stock,20€,5€
+45,The Last of Us,PS3,2013,Blister,Etagere C,25€,10€
+46,Zelda Breath of the Wild,Switch,2017,Occasion,Comptoir,40€,25€
+47,Tetris,Game Boy,1989,Bon état,Caisse 2,15€,5€
+48,Spyro the Dragon,PS1,1998,Boîte cassée,Etagere C,25€,8€
+49,F-Zero X,Nintendo 64,1998,Neuf,Stock,45€,15€
+50,Earthbound,SNES,1994,Neuf,Coffre-fort,"856,01€",171$
+51,Final Fantasy X,PS2,2001,Bon état,Etagere C,15€,5€
+52,Super Mario Sunshine,GCN,2002,Rayé,Stock,30€,10€
+53,Luigi's Mansion,GameCube,2001,Neuf,Etagere H,45€,15€
+54,Zelda Wind Waker,GC,2002,Collector,Vitrine 1,80€,30€
+55,Metroid Prime,GameCube,2002,Excellent,Etagere H,25€,8€
+56,Sonic Adventure 2,Dreamcast,2001,Bon état,Etagere F,45€,15€
+57,Kingdom Hearts,PlayStation 2,2002,Bon état,Etagere C,15€,5€
+58,Okami,PS2,2006,Neuf,Etagere C,30€,10€
+59,Metal Gear Solid 3,PlayStation 2,2004,Livre Acier,Vitrine 2,50€,20€
+60,Sim City 2000,PC,1993,Boîte,Reserve,20€,2€
+61,Pokemon Emeraude,GBA,2004,Détaché,Caisse 2,60€,20€
+62,Castlevania Aria of Sorrow,GBA,2003,Neuf,Vitrine 1,120€,40€
+63,Advance Wars,Game Boy Advance,2001,Bon état,Etagere D,35€,10€
+64,Super Mario World,SNES,1990,Jauni,Stock,25€,5€
+65,Chrono Cross,PS1,1999,Jauni,Stock,"21,68€","5,42€"
+66,E.T. the Extra-Terrestrial,Atari 2600,1982,Pourri,Poubelle,"0,86€",0$
