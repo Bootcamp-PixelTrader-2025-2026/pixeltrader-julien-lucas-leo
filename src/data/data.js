@@ -93,7 +93,7 @@ function parseCSV(filePath = path.join(__dirname, '../../stock.csv')) {
     let prix_achat = parsePrice(prixRaw);
     let valeur_estimee = parsePrice(valeurRaw);
 
-    // If one price is missing or zero, use the other
+    // si prix manquant ou 0 on utilise l'autre et vice versa
     if (
       (!prix_achat || prix_achat === 0) &&
       valeur_estimee &&
@@ -109,6 +109,8 @@ function parseCSV(filePath = path.join(__dirname, '../../stock.csv')) {
       valeur_estimee = prix_achat;
     }
 
+    // check pour date de sortie manquante
+
     let annee_sortie = annee_raw ? Number(annee_raw) : null;
     if (!annee_sortie) {
       missingYear.push({
@@ -119,6 +121,7 @@ function parseCSV(filePath = path.join(__dirname, '../../stock.csv')) {
       });
     }
 
+// OBJET FINALE
     const item = {
       id,
       titre_jeu: titre_jeu || null,
@@ -132,6 +135,7 @@ function parseCSV(filePath = path.join(__dirname, '../../stock.csv')) {
 
     results.push(item);
   });
+
 
   if (missingYear.length > 0) {
     const outPath = path.join(
