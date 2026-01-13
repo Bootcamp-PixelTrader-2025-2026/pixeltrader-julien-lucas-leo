@@ -2,8 +2,12 @@
   "name": "pixeltrader-julien-lucas-leo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
+    "start": "node main.js",
+    "parse": "node main.js",
+    "format": "prettier --write .",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/Bootcamp-PixelTrader-2025-2026/pixeltrader-julien-lucas-leo/issues"
   },
-  "homepage": "https://github.com/Bootcamp-PixelTrader-2025-2026/pixeltrader-julien-lucas-leo#readme"
+  "homepage": "https://github.com/Bootcamp-PixelTrader-2025-2026/pixeltrader-julien-lucas-leo#readme",
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "prettier": "^2.8.8"
+  }
 }
