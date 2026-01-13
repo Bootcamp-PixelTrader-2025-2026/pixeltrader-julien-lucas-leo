@@ -1,0 +1,19 @@
+{
+  "name": "pixeltrader-julien-lucas-leo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bootcamp-PixelTrader-2025-2026/pixeltrader-julien-lucas-leo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bootcamp-PixelTrader-2025-2026/pixeltrader-julien-lucas-leo/issues"
+  },
+  "homepage": "https://github.com/Bootcamp-PixelTrader-2025-2026/pixeltrader-julien-lucas-leo#readme"
+}
