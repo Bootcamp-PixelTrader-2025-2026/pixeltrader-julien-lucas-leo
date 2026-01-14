@@ -121,7 +121,7 @@ function parseCSV(filePath = path.join(__dirname, '../../stock.csv')) {
       });
     }
 
-// OBJET FINALE
+    // OBJET FINALE
     const item = {
       id,
       titre_jeu: titre_jeu || null,
@@ -135,7 +135,6 @@ function parseCSV(filePath = path.join(__dirname, '../../stock.csv')) {
 
     results.push(item);
   });
-
 
   if (missingYear.length > 0) {
     const outPath = path.join(
@@ -155,6 +154,13 @@ function parseCSV(filePath = path.join(__dirname, '../../stock.csv')) {
     } catch (e) {
       // ignore write errors but continue
     }
+  }
+
+  // wjosn parsé à la racine.
+  try {
+    const jsonOutPath = path.join(path.dirname(absPath), 'stock_parsed.json');
+    fs.writeFileSync(jsonOutPath, JSON.stringify(results, null, 2), 'utf8');
+  } catch (e) {
   }
 
   return results;
