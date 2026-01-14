@@ -25,6 +25,7 @@
     "prettier": "^2.8.8"
   },
   "dependencies": {
+    "express": "^5.2.1",
     "postgres": "^3.4.8"
   }
 }
