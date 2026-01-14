@@ -2,7 +2,7 @@ id,titre_jeu,plateforme,annee_sortie,etat,emplacement,valeur_estimee,prix_achat
 1,Super Mario 64,Nintendo 64,1996,Neuf,Etagere A,50€,15€
 2,The Legend of Zelda: Ocarina of Time,N64,1998,Boite abimée,Etagere A,75€,20€
 3,Sonic The Hedgehog,Sega Mega Drive,1991,Bon état,Etagere B,30€,5€
-4,Final Fantasy VII,PlayStation 1,1997,Neuf,Vitrine 1,120€,45€
+4,Final Fantasy VII,PlayStation 1,1997,Neuf,Vitrine,"1,120€",45€
 5,Super Mario 64,Nintendo 64,1996,Neuf,Stock,50€,15€
 6,Street Fighter II,SNES,1992,Sans notice,Etagere D,45€,10€
 7,Tetris,Game Boy,1989,Bon état,Caisse 2,NULL,5€
@@ -24,10 +24,10 @@ id,titre_jeu,plateforme,annee_sortie,etat,emplacement,valeur_estimee,prix_achat
 23,Super Metroid,SNES,1994,Boîte manquante,Etagere A,120€,40€
 24,Final Fantasy VII,PSX,1997,Neuf,Stock,120€,40€
 25,Crash Bandicoot,Playstation,1996,Bon,Etagere C,30€,10€
-26,Pokemon Bleu,Game Boy,1999,Détaché,Caisse 2,35€,10€
+26,Pokemon Bleu,Game Boy,1999,Détaché,Caisse,"2,35€",10€
 27,Zelda: A Link to the Past,Super Nintendo,1991,Usé,Etagere A,NULL,10€
 28,Earthworm Jim,Megadrive,1994,Bon état,Etagere B,40€,15€
-29,Silent Hill,PS1,1999,Neuf,Vitrine 1,80€,25€
+29,Silent Hill,PS1,1999,Neuf,Vitrine,"1,80€",25€
 30,Super Smash Bros Melee,GameCube,2001,Rayé,Etagere H,35€,10€
 31,Ico,PlayStation 2,2001,Neuf,Etagere C,40€,15€
 32,Shadow of the Colossus,PS2,2005,Excellent,Etagere C,35€,12€
@@ -37,7 +37,7 @@ id,titre_jeu,plateforme,annee_sortie,etat,emplacement,valeur_estimee,prix_achat
 36,Crazy Taxi,Dreamcast,1999,Comme neuf,Etagere F,40€,15€
 37,Mario Kart 64,Nintendo 64,1997,Sans boîte,Etagere A,35€,12€
 38,Pokemon Or,Gameboy Color,2000,Pile HS,Caisse 2,45€,15€
-39,Duck Hunt,NES,1984,Bon,Stock,10e,2€
+39,Duck Hunt,NES,1984,Bon,Stock,10€,2€
 40,Mega Man 2,NES,1988,Abîmé ,Etagere A,50€,15€
 41,Gran Turismo,Playstation 1,1997,Platinum,Etagere C,10€,2€
 42,SoulCalibur,Dreamcast,1999,Neuf,Vitrine 2,40€,15€
@@ -45,7 +45,7 @@ id,titre_jeu,plateforme,annee_sortie,etat,emplacement,valeur_estimee,prix_achat
 44,Portal 2,PS3,2011,Neuf,Stock,20€,5€
 45,The Last of Us,PS3,2013,Blister,Etagere C,25€,10€
 46,Zelda Breath of the Wild,Switch,2017,Occasion,Comptoir,40€,25€
-47,Tetris,Game Boy,1989,Bon état,Caisse 2,15€,5€
+47,Tetris,Game Boy,1989,Bon état,Caisse,"2,15€",5€
 48,Spyro the Dragon,PS1,1998,Boîte cassée,Etagere C,25€,8€
 49,F-Zero X,Nintendo 64,1998,Neuf,Stock,45€,15€
 50,Earthbound,SNES,1994,Neuf,Coffre-fort,"856,01€",171$
