@@ -1,33 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Mes jeux</title>
+    <title>Mes Jeux Rétro</title>
     <script src="front.js" defer></script>
   </head>
   <body>
     <h1>Liste des jeux</h1>
 
-<section class="filtre-container">
-  <div class="group-filter">
-    <label for="select-console">Filtrer par console :</label>
-    <select id="console-select">
-      <option value="all">Tous</option>
-      <option value="">Action</option>
-      <option value="adventure">Aventure</option>
-      <option value="rpg">RPG</option>
-      <option value="strategy">Stratégie</option>
-      <option value="sports">Sports</option>
-    </select>
+    <section class="filtre-container">
+      <div class="group-filter">
+        <label for="console-select">CONSOLE :</label>
+        <select id="console-select">
+          <option value="all">Toutes les consoles</option>
+          <option value="sony">PlayStation</option>
+          <option value="nintendo_home">Nintendo (Salon)</option>
+          <option value="nintendo_handheld">Nintendo (Portable)</option>
+          <option value="sega">Sega</option>
+          <option value="xbox">Xbox</option>
+          <option value="pc">PC</option>
+          <option value="retro">Arcade & Rétro</option>
+        </select>
+      </div>
 
+      <div class="group-filter">
+        <label for="etat-select">ÉTAT :</label>
+        <select id="etat-select">
+          <option value="all">Tous les états</option>
+          <option value="new">Neuf / Collector</option>
+          <option value="good">Bon état / Occasion</option>
+          <option value="damaged_box">Boîte abîmée</option>
+          <option value="loose">Loose (Sans boîte)</option>
+          <option value="bad">Mauvais état / HS</option>
+        </select>
+      </div>
+    </section>
 
-  </div>
-</section>
+    <section class="import-zone">
+      <h2>Import de Données</h2>
+      <div class="import-controls">
+        <input type="file" id="file-input" accept=".csv, .json" /><button id="btn-import">AJOUTER</button>
+      </div>
+      <p id="import-status" class="status-text"></p>
+      <button id="btn-reset">⚠ Réinitialiser</button>
+    </section>
 
-
-
-    <div id="result">Chargement...</div>
+    <div id="result"><p>Chargement...</p></div>
   </body>
 </html>

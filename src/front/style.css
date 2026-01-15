@@ -99,3 +99,199 @@ body::after {
     opacity: 0.8;
   }
 }
+
+/* --- Ajout pour les filtres --- */
+.filtre-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.group-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  font-size: 0.7rem;
+  margin-bottom: 5px;
+  color: var(--neon-pink);
+}
+
+select {
+  background-color: var(--screen-bg);
+  color: var(--neon-green);
+  border: 2px solid var(--neon-green);
+  font-family: 'Press Start 2P', cursive;
+  padding: 10px;
+  font-size: 0.8rem;
+  box-shadow: 2px 2px 0px #333;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 10px var(--neon-green);
+}
+
+/* --- Zone d'importation (J4) --- */
+.import-zone {
+  border-top: 2px dashed var(--neon-pink);
+  margin: 30px 0;
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+.import-zone h2 {
+  font-size: 1rem;
+  color: var(--neon-pink);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.import-controls {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+/* Le bouton d'import */
+#btn-import {
+  background-color: var(--neon-pink);
+  color: #fff;
+  border: none;
+  font-family: 'Press Start 2P', cursive;
+  padding: 10px 15px;
+  font-size: 0.6rem;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px #880e4f;
+  transition: all 0.1s;
+}
+
+#btn-import:hover {
+  background-color: #ff4081;
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px #880e4f;
+}
+
+#btn-import:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #880e4f;
+}
+
+/* L'input file */
+#file-input {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.6rem;
+  color: var(--neon-green);
+}
+
+/* --- La nouvelle classe pour le texte de statut --- */
+.import-status-text {
+  font-size: 0.7rem;
+  color: #888; /* Couleur par défaut (gris) */
+  margin-top: 10px;
+  min-height: 1.2em; /* Garde la place même si vide pour éviter le saut */
+}
+
+/* --- Zone d'importation --- */
+.import-zone {
+  border-top: 2px dashed var(--neon-pink);
+  margin: 30px 0;
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+.import-zone h2 {
+  font-size: 1rem;
+  color: var(--neon-pink);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.import-controls {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+/* Bouton d'import (Rose) */
+#btn-import {
+  background-color: var(--neon-pink);
+  color: #fff;
+  border: none;
+  font-family: 'Press Start 2P', cursive;
+  padding: 10px 15px;
+  font-size: 0.6rem;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px #880e4f;
+  transition: all 0.1s;
+}
+
+#btn-import:hover {
+  background-color: #ff4081;
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px #880e4f;
+}
+
+/* Bouton Reset (Rouge) */
+#btn-reset {
+  margin-top: 15px;
+  font-size: 0.5rem;
+  background-color: #b71c1c; /* Rouge foncé */
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+#btn-reset:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Input File */
+#file-input {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.6rem;
+  color: var(--neon-green);
+}
+
+/* --- États des messages (Gérés par JS) --- */
+.status-text {
+  font-size: 0.7rem;
+  margin-top: 10px;
+  min-height: 1.2em;
+  color: #888; /* Gris par défaut */
+}
+
+.status-error {
+  color: #ff0000; /* Rouge */
+}
+
+.status-success {
+  color: #00ffff; /* Cyan */
+}
+
+/* --- Détails des jeux dans la liste --- */
+.game-infos {
+  font-size: 0.7em;
+  color: var(--neon-pink);
+  opacity: 0.9;
+}
