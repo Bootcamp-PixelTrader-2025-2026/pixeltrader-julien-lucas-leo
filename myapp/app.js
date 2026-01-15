@@ -1,9 +1,14 @@
-const express = require('express');
+import express from 'express';
+import cors from 'cors';
+import routes from './routes/game.js';
+
 const app = express();
 const port = 3000;
 
-import routes from './myapp/routes/game.js';
-routes(app)
+app.use(cors());
+app.use(express.json());
+
+routes(app);
 
 app.get('/', (req, res) => {
   res.send(`Hello World! Cette app fonctionne sur le port ${port}`);
