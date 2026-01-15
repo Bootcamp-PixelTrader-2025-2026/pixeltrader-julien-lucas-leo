@@ -3,8 +3,6 @@ const app = express();
 const port = 3000;
 
 import routes from './myapp/routes/game.js';
-
-
 routes(app)
 
 app.get('/', (req, res) => {
