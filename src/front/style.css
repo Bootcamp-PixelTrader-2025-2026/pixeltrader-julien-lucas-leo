@@ -1,0 +1,101 @@
+/* 1. Importation de la police pixelisée depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --main-bg: #1a1a20;
+  --screen-bg: #000000;
+  --neon-green: #39ff14;
+  --neon-pink: #ff00ff;
+  --arcade-yellow: #ffeb3b;
+  --text-shadow: 2px 2px 0px #888;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg);
+  color: var(--neon-green);
+  font-family: 'Press Start 2P', cursive; /* La police rétro */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 50px;
+  overflow-x: hidden;
+}
+
+/* 2. Titre style Arcade */
+h1 {
+  font-size: 2.5rem;
+  color: var(--arcade-yellow);
+  text-shadow: 4px 4px 0px #b71c1c; /* Ombre portée "bloc" */
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  animation: flicker 2s infinite; /* Petit effet de scintillement */
+}
+
+/* 3. Conteneur des résultats (comme une fenêtre de dialogue) */
+#result {
+  background-color: var(--screen-bg);
+  border: 4px solid var(--neon-green);
+  box-shadow: 0 0 15px var(--neon-green), inset 0 0 20px rgba(57, 255, 20, 0.2);
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  min-height: 200px;
+  line-height: 1.8;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+/* Style pour les éléments à l'intérieur de #result (si tu ajoutes des <li> ou <p> via JS) */
+#result ul {
+  list-style-type: none; /* Carré rétro */
+  padding: 0;
+}
+
+#result li {
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #333;
+  padding-bottom: 10px;
+}
+
+#result li::before {
+  content: "> ";
+  color: var(--neon-pink);
+}
+
+/* 4. Effet "Scanlines" (Lignes de balayage écran TV) */
+body::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg, 
+    rgba(255, 0, 0, 0.06), 
+    rgba(0, 255, 0, 0.02), 
+    rgba(0, 0, 255, 0.06)
+  );
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none; /* Permet de cliquer à travers */
+}
+
+/* Animation de scintillement pour le titre */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.8;
+  }
+}
