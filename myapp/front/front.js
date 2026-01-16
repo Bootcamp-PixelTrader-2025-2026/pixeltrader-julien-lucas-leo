@@ -235,16 +235,16 @@ document.getElementById('btn-import').addEventListener('click', async () => {
     const result = await response.json();
 
     if (response.ok) {
-      statusEl.textContent = `✅ ${result.message}`;
+      statusEl.textContent = `${result.message}`;
       statusEl.className = 'status-success';
       localStorage.removeItem(STORAGE_KEY);
       setTimeout(() => location.reload(), 1000);
     } else {
-      statusEl.textContent = `❌ Erreur: ${result.message}`;
+      statusEl.textContent = `Erreur: ${result.message}`;
       statusEl.className = 'status-error';
     }
   } catch (err) {
-    statusEl.textContent = `❌ Erreur: ${err.message}`;
+    statusEl.textContent = `Erreur: ${err.message}`;
     statusEl.className = 'status-error';
   }
 });
