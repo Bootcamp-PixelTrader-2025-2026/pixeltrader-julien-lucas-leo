@@ -1,5 +1,12 @@
-/*  CONFIGURATION */
+/* ==========================
+   CONFIGURATION
+========================== */
 
+/**
+ * platformConfig : correspondance des consoles.
+ * Chaque clé regroupe toutes les variantes possibles d'une console.
+ * Exemple : "sony" contient toutes les façons de désigner PlayStation.
+ */
 const platformConfig = {
   sony: [
     'PlayStation 1',
@@ -44,6 +51,11 @@ const platformConfig = {
   retro: ['Arcade', 'Atari 2600'],
 };
 
+/**
+ * conditionConfig : correspondance des états des jeux.
+ * Chaque clé regroupe les libellés possibles pour cet état.
+ * Exemple : "new" contient "Neuf", "Blister", "Collector", etc.
+ */
 const conditionConfig = {
   new: [
     'Neuf',
@@ -73,29 +85,43 @@ const conditionConfig = {
   bad: ['Moyen', 'Rayé', 'Usé', 'Pourri', 'Pile HS'],
 };
 
+/**
+ * STORAGE_KEY : clé utilisée pour enregistrer la collection dans le localStorage.
+ * tousLesJeux : tableau contenant tous les jeux chargés.
+ */
 const STORAGE_KEY = 'maCollectionJeux_v1';
 let tousLesJeux = [];
 
-/* CHARGEMENT DES DONNÉES */
+/* ==========================
+   CHARGEMENT DES DONNÉES
+========================== */
 
+/**
+ * chargerJeux : charge la collection depuis le localStorage
+ * ou depuis le fichier CSV/JS d'origine si aucune sauvegarde n'existe.
+ */
 async function chargerJeux() {
   const resultDiv = document.getElementById('result');
   const sauvegarde = localStorage.getItem(STORAGE_KEY);
 
+  // Si une sauvegarde existe, on l'utilise
   if (sauvegarde) {
     try {
       tousLesJeux = JSON.parse(sauvegarde);
       afficherJeux(tousLesJeux);
       return;
     } catch {
+      // Si JSON invalide, on supprime et on recharge depuis CSV
       localStorage.removeItem(STORAGE_KEY);
     }
   }
 
+  // Sinon, on récupère le fichier original
   try {
-    const reponse = await fetch('/games');
+    const reponse = await fetch('/game.js');
     if (!reponse.ok) throw new Error();
-    tousLesJeux = await reponse.json();
+    const contenu = await reponse.text();
+    tousLesJeux = csvToJSON(contenu);
     afficherJeux(tousLesJeux);
   } catch {
     resultDiv.innerHTML =
@@ -103,11 +129,16 @@ async function chargerJeux() {
   }
 }
 
-/* AFFICHAGE */
+/* ==========================
+   AFFICHAGE DES JEUX
+========================== */
 
+/**
+ * afficherJeux : affiche une liste de jeux dans la div #result
+ * @param {Array} liste - tableau d'objets jeu
+ */
 function afficherJeux(liste) {
   const container = document.getElementById('result');
-
   if (!Array.isArray(liste) || liste.length === 0) {
     container.innerHTML = '<p>Aucun jeu trouvé.</p>';
     return;
@@ -117,24 +148,28 @@ function afficherJeux(liste) {
     '<ul>' +
     liste
       .map((jeu) => {
-        const prix =
-          typeof jeu.valeur_estimee === 'number'
-            ? jeu.valeur_estimee
-            : jeu.valeur_estimee?.replace(/"/g, '') || 'N/A';
+        const prix = jeu.valeur_estimee || 'N/A';
         return `
-                <li>
-                    <strong>${jeu.titre_jeu}</strong><br>
-                    <span class="game-infos">
-                        [${jeu.plateforme}] • ${jeu.etat} • ${prix}
-                    </span>
-                </li>`;
+<li>
+    <a href="./game.html?id=${jeu.id}">
+        <strong>${jeu.titre_jeu}</strong><br>
+        <span class="game-infos">
+            [${jeu.plateforme}] • ${jeu.etat} • ${prix}
+        </span>
+    </a>
+</li>`;
       })
       .join('') +
     '</ul>';
 }
 
-/* FILTRES */
+/* ==========================
+   FILTRAGE DES JEUX
+========================== */
 
+/**
+ * appliquerFiltres : filtre les jeux en fonction de la console et de l'état
+ */
 function appliquerFiltres() {
   const consoleVal = document.getElementById('console-select').value;
   const etatVal = document.getElementById('etat-select').value;
@@ -143,22 +178,27 @@ function appliquerFiltres() {
     const okConsole =
       consoleVal === 'all' ||
       platformConfig[consoleVal]?.includes(jeu.plateforme);
-
     const okEtat =
       etatVal === 'all' || conditionConfig[etatVal]?.includes(jeu.etat);
-
     return okConsole && okEtat;
   });
 
   afficherJeux(filtres);
 }
 
-/* IMPORT DE FICHIERS */
+/* ==========================
+   IMPORT DE FICHIERS
+========================== */
 
 const btnImport = document.getElementById('btn-import');
 const fileInput = document.getElementById('file-input');
 const statusMsg = document.getElementById('import-status');
 
+/**
+ * setStatus : affiche un message d'état avec couleur
+ * @param {string} message - texte à afficher
+ * @param {string} type - 'error' ou 'success' ou ''
+ */
 function setStatus(message, type = '') {
   statusMsg.textContent = message;
   statusMsg.className = 'status-text';
@@ -198,7 +238,9 @@ btnImport.addEventListener('click', () => {
   reader.readAsText(file);
 });
 
-/* RESET */
+/* ==========================
+   RESET
+========================== */
 
 document.getElementById('btn-reset').addEventListener('click', () => {
   if (!confirm('Tout effacer et revenir à zéro ?')) return;
@@ -206,56 +248,21 @@ document.getElementById('btn-reset').addEventListener('click', () => {
   location.reload();
 });
 
-/* IMPORT CSV */
+/* ==========================
+   CSV → JSON
+========================== */
 
-document.getElementById('btn-import').addEventListener('click', async () => {
-  const fileInput = document.getElementById('file-input');
-  const statusEl = document.getElementById('import-status');
-
-  if (!fileInput.files[0]) {
-    statusEl.textContent = 'Aucun fichier sélectionné';
-    statusEl.className = 'status-error';
-    return;
-  }
-
-  const file = fileInput.files[0];
-
-  try {
-    statusEl.textContent = 'Import en cours...';
-    statusEl.className = 'status-text';
-
-    const csvContent = await file.text();
-
-    const response = await fetch('/import-csv', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ csvContent }),
-    });
-
-    const result = await response.json();
-
-    if (response.ok) {
-      statusEl.textContent = `${result.message}`;
-      statusEl.className = 'status-success';
-      localStorage.removeItem(STORAGE_KEY);
-      setTimeout(() => location.reload(), 1000);
-    } else {
-      statusEl.textContent = `Erreur: ${result.message}`;
-      statusEl.className = 'status-error';
-    }
-  } catch (err) {
-    statusEl.textContent = `Erreur: ${err.message}`;
-    statusEl.className = 'status-error';
-  }
-});
-
-/* CSV → JSON */
-
+/**
+ * csvToJSON : transforme un texte CSV en tableau d'objets JS
+ * @param {string} csvText - contenu CSV
+ * @returns {Array} tableau d'objets jeu
+ */
 function csvToJSON(csvText) {
   const lignes = csvText.trim().split('\n');
   const resultats = [];
 
   for (let i = 1; i < lignes.length; i++) {
+    // Découpe les colonnes, mais ignore les virgules à l'intérieur de guillemets
     const colonnes = lignes[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
     if (colonnes.length < 3) continue;
 
@@ -275,6 +282,10 @@ function csvToJSON(csvText) {
 
   return resultats;
 }
+
+/* ==========================
+   INIT
+========================== */
 
 chargerJeux();
 document
