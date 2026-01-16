@@ -1,11 +1,11 @@
-import postgres from 'postgres';
+// import postgres from 'postgres';
 
-const sql = postgres({
-  host: 'localhost',
-  port: 5432,
-  database: 'pixeltraderinc',
-  username: 'postgres',
-  password: 'postgresql',
-});
+// const sql = postgres({
+//   host: 'localhost',
+//   port: 5432,      
+//   database: 'pixeltraderinc',
+//   username: 'postgres',
+//   password: 'postgressql',
+// });
 
-export default sql;
+// export default sql;
