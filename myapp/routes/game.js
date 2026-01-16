@@ -59,4 +59,62 @@ export default function routes(app) {
       res.status(500).json({ error: 'SERVER_ERROR', message: err.message });
     }
   });
+
+  // POST route to import CSV and replace JSON DB
+  app.post('/import-csv', (req, res) => {
+    try {
+      const { csvContent } = req.body;
+      if (!csvContent) {
+        return res
+          .status(400)
+          .json({ error: 'CSV_REQUIRED', message: 'csvContent manquant' });
+      }
+
+      // Parse CSV to JSON
+      const lines = csvContent.trim().split(/\r?\n/);
+      if (lines.length < 2) {
+        return res
+          .status(400)
+          .json({ error: 'INVALID_CSV', message: 'CSV vide ou invalide' });
+      }
+
+      const headers = lines[0].split(',').map((h) => h.trim());
+      const games = [];
+
+      for (let i = 1; i < lines.length; i++) {
+        const values = lines[i].split(',').map((v) => v.trim());
+        const game = {};
+
+        headers.forEach((header, index) => {
+          const value = values[index] || '';
+          // Convert numbers
+          if (
+            header === 'id' ||
+            header === 'annee_sortie' ||
+            header === 'valeur_estimee' ||
+            header === 'prix_achat'
+          ) {
+            game[header] = Number(value) || 0;
+          } else {
+            game[header] = value;
+          }
+        });
+
+        // Skip if empty or emplacement is 'poubelle'
+        if (game.titre_jeu && game.emplacement?.toLowerCase() !== 'poubelle') {
+          games.push(game);
+        }
+      }
+
+      // Replace JSON file
+      fs.writeFileSync(jsonPath, JSON.stringify(games, null, 2), 'utf-8');
+      res.json({
+        success: true,
+        count: games.length,
+        message: `${games.length} jeux importés`,
+      });
+    } catch (err) {
+      res.status(500).json({ error: 'SERVER_ERROR', message: err.message });
+    }
+  });
 }
