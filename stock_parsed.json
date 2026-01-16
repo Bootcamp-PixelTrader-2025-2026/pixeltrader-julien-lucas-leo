@@ -2,102 +2,102 @@
   {
     "id": 1,
     "titre_jeu": "Super Mario 64",
-    "plateforme": "N64",
+    "plateforme": "Nintendo 64",
     "annee_sortie": 1996,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Etagere A",
-    "valeur_estimee": 50,
-    "prix_achat": 15
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 2,
     "titre_jeu": "The Legend of Zelda: Ocarina of Time",
     "plateforme": "N64",
     "annee_sortie": 1998,
-    "etat": "Mauvais",
+    "etat": "Boite abimée",
     "emplacement": "Etagere A",
-    "valeur_estimee": 75,
-    "prix_achat": 20
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 3,
     "titre_jeu": "Sonic The Hedgehog",
     "plateforme": "Sega Mega Drive",
     "annee_sortie": 1991,
-    "etat": "Bon",
+    "etat": "Bon état",
     "emplacement": "Etagere B",
-    "valeur_estimee": 30,
-    "prix_achat": 5
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 4,
     "titre_jeu": "Final Fantasy VII",
-    "plateforme": "PS1",
+    "plateforme": "PlayStation 1",
     "annee_sortie": 1997,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Vitrine",
-    "valeur_estimee": 1,
-    "prix_achat": 120
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 5,
     "titre_jeu": "Super Mario 64",
-    "plateforme": "N64",
+    "plateforme": "Nintendo 64",
     "annee_sortie": 1996,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Stock",
-    "valeur_estimee": 50,
-    "prix_achat": 15
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 6,
     "titre_jeu": "Street Fighter II",
     "plateforme": "SNES",
     "annee_sortie": 1992,
-    "etat": "Moyen",
+    "etat": "Sans notice",
     "emplacement": "Etagere D",
-    "valeur_estimee": 45,
-    "prix_achat": 10
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 7,
     "titre_jeu": "Tetris",
     "plateforme": "Game Boy",
     "annee_sortie": 1989,
-    "etat": "Bon",
+    "etat": "Bon état",
     "emplacement": "Caisse 2",
-    "valeur_estimee": 5,
-    "prix_achat": 5
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 8,
     "titre_jeu": "Metal Gear Solid",
-    "plateforme": "PS1",
+    "plateforme": "Ps1",
     "annee_sortie": 1998,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Vitrine 1",
-    "valeur_estimee": 60,
-    "prix_achat": 20
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 9,
     "titre_jeu": "Chrono Trigger",
     "plateforme": "Super Nintendo",
     "annee_sortie": 1995,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Coffre-fort",
-    "valeur_estimee": 300,
-    "prix_achat": 80
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 10,
     "titre_jeu": "Castlevania: Symphony of the Night",
     "plateforme": "PlayStation",
     "annee_sortie": 1997,
-    "etat": "Bon",
+    "etat": "Bon état",
     "emplacement": "Etagere A",
-    "valeur_estimee": 150,
-    "prix_achat": 50
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 11,
@@ -106,108 +106,108 @@
     "annee_sortie": 1986,
     "etat": "Moyen",
     "emplacement": "Etagere B",
-    "valeur_estimee": 20,
-    "prix_achat": 5
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 12,
     "titre_jeu": "Pokemon Rouge",
     "plateforme": "GameBoy",
     "annee_sortie": 1996,
-    "etat": "Bon",
+    "etat": "Bon état",
     "emplacement": "Caisse 2",
-    "valeur_estimee": 40,
-    "prix_achat": 15
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 13,
     "titre_jeu": "GoldenEye 007",
-    "plateforme": "N64",
+    "plateforme": "Nintendo 64",
     "annee_sortie": 1997,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Etagere F",
-    "valeur_estimee": 55,
-    "prix_achat": 20
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 14,
     "titre_jeu": "Shenmue",
     "plateforme": "Dreamcast",
     "annee_sortie": 1999,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Vitrine 2",
-    "valeur_estimee": 80,
-    "prix_achat": 30
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 15,
     "titre_jeu": "Half-Life",
     "plateforme": "PC",
     "annee_sortie": 1998,
-    "etat": "Bon",
+    "etat": "Bon état",
     "emplacement": "Reserve",
-    "valeur_estimee": 15,
-    "prix_achat": 2
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 16,
     "titre_jeu": "Super Mario Bros 3",
     "plateforme": "NES",
     "annee_sortie": 1988,
-    "etat": "Mauvais",
+    "etat": "Abimé",
     "emplacement": "Etagere A",
-    "valeur_estimee": 35,
-    "prix_achat": 10
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 17,
     "titre_jeu": "Resident Evil",
-    "plateforme": "PS1",
+    "plateforme": "PlayStation 1",
     "annee_sortie": 1996,
-    "etat": "Bon",
+    "etat": "Bon état",
     "emplacement": "Etagere G",
-    "valeur_estimee": 45,
-    "prix_achat": 15
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 18,
     "titre_jeu": "Sonic The Hedgehog",
     "plateforme": "Sega Mega Drive",
     "annee_sortie": 1991,
-    "etat": "Bon",
+    "etat": "Bon état",
     "emplacement": "Etagere B",
-    "valeur_estimee": 30,
-    "prix_achat": 8
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 19,
     "titre_jeu": "Donkey Kong Country",
     "plateforme": "SNES",
     "annee_sortie": 1994,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Etagere A",
-    "valeur_estimee": 40,
-    "prix_achat": 15
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 20,
     "titre_jeu": "Pac-Man",
     "plateforme": "Arcade",
     "annee_sortie": 1980,
-    "etat": "Moyen",
+    "etat": "Cabinet",
     "emplacement": "Entrée",
-    "valeur_estimee": 1,
-    "prix_achat": 355
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 21,
     "titre_jeu": "Grand Theft Auto",
     "plateforme": "PS1",
     "annee_sortie": 1997,
-    "etat": "Moyen",
+    "etat": "Rayé",
     "emplacement": "Stock",
-    "valeur_estimee": 25,
-    "prix_achat": 5
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 22,
@@ -216,28 +216,28 @@
     "annee_sortie": 2001,
     "etat": "Excellent",
     "emplacement": "Etagere H",
-    "valeur_estimee": 15,
-    "prix_achat": 5
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 23,
     "titre_jeu": "Super Metroid",
     "plateforme": "SNES",
     "annee_sortie": 1994,
-    "etat": "Moyen",
+    "etat": "Boîte manquante",
     "emplacement": "Etagere A",
-    "valeur_estimee": 120,
-    "prix_achat": 40
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 24,
     "titre_jeu": "Final Fantasy VII",
     "plateforme": "PSX",
     "annee_sortie": 1997,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Stock",
-    "valeur_estimee": 120,
-    "prix_achat": 40
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 25,
@@ -246,68 +246,68 @@
     "annee_sortie": 1996,
     "etat": "Bon",
     "emplacement": "Etagere C",
-    "valeur_estimee": 30,
-    "prix_achat": 10
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 26,
     "titre_jeu": "Pokemon Bleu",
     "plateforme": "Game Boy",
     "annee_sortie": 1999,
-    "etat": "Moyen",
+    "etat": "Détaché",
     "emplacement": "Caisse",
-    "valeur_estimee": 2,
-    "prix_achat": 35
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 27,
     "titre_jeu": "Zelda: A Link to the Past",
     "plateforme": "Super Nintendo",
     "annee_sortie": 1991,
-    "etat": "Moyen",
+    "etat": "Usé",
     "emplacement": "Etagere A",
-    "valeur_estimee": 10,
-    "prix_achat": 10
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 28,
     "titre_jeu": "Earthworm Jim",
     "plateforme": "Megadrive",
     "annee_sortie": 1994,
-    "etat": "Bon",
+    "etat": "Bon état",
     "emplacement": "Etagere B",
-    "valeur_estimee": 40,
-    "prix_achat": 15
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 29,
     "titre_jeu": "Silent Hill",
     "plateforme": "PS1",
     "annee_sortie": 1999,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Vitrine",
-    "valeur_estimee": 1,
-    "prix_achat": 80
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 30,
     "titre_jeu": "Super Smash Bros Melee",
     "plateforme": "GameCube",
     "annee_sortie": 2001,
-    "etat": "Moyen",
+    "etat": "Rayé",
     "emplacement": "Etagere H",
-    "valeur_estimee": 35,
-    "prix_achat": 10
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 31,
     "titre_jeu": "Ico",
-    "plateforme": "PS2",
+    "plateforme": "PlayStation 2",
     "annee_sortie": 2001,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Etagere C",
-    "valeur_estimee": 40,
-    "prix_achat": 15
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 32,
@@ -316,68 +316,68 @@
     "annee_sortie": 2005,
     "etat": "Excellent",
     "emplacement": "Etagere C",
-    "valeur_estimee": 35,
-    "prix_achat": 12
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 33,
     "titre_jeu": "Street Fighter 2",
     "plateforme": "Super Famicom",
     "annee_sortie": 1992,
-    "etat": "Moyen",
+    "etat": "Jauni",
     "emplacement": "Stock",
-    "valeur_estimee": 18,
-    "prix_achat": 97
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 34,
     "titre_jeu": "Conker's Bad Fur Day",
     "plateforme": "N64",
     "annee_sortie": 2001,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Coffre-fort",
-    "valeur_estimee": 200,
-    "prix_achat": 60
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 35,
     "titre_jeu": "Tomb Raider",
     "plateforme": "Saturn",
     "annee_sortie": 1996,
-    "etat": "Bon",
+    "etat": "Bon état",
     "emplacement": "Etagere B",
-    "valeur_estimee": 30,
-    "prix_achat": 10
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 36,
     "titre_jeu": "Crazy Taxi",
     "plateforme": "Dreamcast",
     "annee_sortie": 1999,
-    "etat": "Moyen",
+    "etat": "Comme neuf",
     "emplacement": "Etagere F",
-    "valeur_estimee": 40,
-    "prix_achat": 15
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 37,
     "titre_jeu": "Mario Kart 64",
-    "plateforme": "N64",
+    "plateforme": "Nintendo 64",
     "annee_sortie": 1997,
-    "etat": "Moyen",
+    "etat": "Sans boîte",
     "emplacement": "Etagere A",
-    "valeur_estimee": 35,
-    "prix_achat": 12
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 38,
     "titre_jeu": "Pokemon Or",
-    "plateforme": "GameBoy",
+    "plateforme": "Gameboy Color",
     "annee_sortie": 2000,
-    "etat": "Moyen",
+    "etat": "Pile HS",
     "emplacement": "Caisse 2",
-    "valeur_estimee": 45,
-    "prix_achat": 15
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 39,
@@ -386,158 +386,158 @@
     "annee_sortie": 1984,
     "etat": "Bon",
     "emplacement": "Stock",
-    "valeur_estimee": 10,
-    "prix_achat": 2
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 40,
     "titre_jeu": "Mega Man 2",
     "plateforme": "NES",
     "annee_sortie": 1988,
-    "etat": "Moyen",
+    "etat": "Abîmé",
     "emplacement": "Etagere A",
-    "valeur_estimee": 50,
-    "prix_achat": 15
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 41,
     "titre_jeu": "Gran Turismo",
-    "plateforme": "PS1",
+    "plateforme": "Playstation 1",
     "annee_sortie": 1997,
-    "etat": "Moyen",
+    "etat": "Platinum",
     "emplacement": "Etagere C",
-    "valeur_estimee": 10,
-    "prix_achat": 2
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 42,
     "titre_jeu": "SoulCalibur",
     "plateforme": "Dreamcast",
     "annee_sortie": 1999,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Vitrine 2",
-    "valeur_estimee": 40,
-    "prix_achat": 15
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 43,
     "titre_jeu": "Diablo II",
     "plateforme": "PC",
     "annee_sortie": 2000,
-    "etat": "Moyen",
+    "etat": "Grosse Boîte",
     "emplacement": "Reserve",
-    "valeur_estimee": 60,
-    "prix_achat": 10
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 44,
     "titre_jeu": "Portal 2",
     "plateforme": "PS3",
     "annee_sortie": 2011,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Stock",
-    "valeur_estimee": 20,
-    "prix_achat": 5
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 45,
     "titre_jeu": "The Last of Us",
     "plateforme": "PS3",
     "annee_sortie": 2013,
-    "etat": "Moyen",
+    "etat": "Blister",
     "emplacement": "Etagere C",
-    "valeur_estimee": 25,
-    "prix_achat": 10
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 46,
     "titre_jeu": "Zelda Breath of the Wild",
     "plateforme": "Switch",
     "annee_sortie": 2017,
-    "etat": "Moyen",
+    "etat": "Occasion",
     "emplacement": "Comptoir",
-    "valeur_estimee": 40,
-    "prix_achat": 25
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 47,
     "titre_jeu": "Tetris",
     "plateforme": "Game Boy",
     "annee_sortie": 1989,
-    "etat": "Bon",
+    "etat": "Bon état",
     "emplacement": "Caisse",
-    "valeur_estimee": 2,
-    "prix_achat": 15
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 48,
     "titre_jeu": "Spyro the Dragon",
     "plateforme": "PS1",
     "annee_sortie": 1998,
-    "etat": "Mauvais",
+    "etat": "Boîte cassée",
     "emplacement": "Etagere C",
-    "valeur_estimee": 25,
-    "prix_achat": 8
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 49,
     "titre_jeu": "F-Zero X",
-    "plateforme": "N64",
+    "plateforme": "Nintendo 64",
     "annee_sortie": 1998,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Stock",
-    "valeur_estimee": 45,
-    "prix_achat": 15
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 50,
     "titre_jeu": "Earthbound",
     "plateforme": "SNES",
     "annee_sortie": 1994,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Coffre-fort",
-    "valeur_estimee": 856,
-    "prix_achat": 1
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 51,
     "titre_jeu": "Final Fantasy X",
     "plateforme": "PS2",
     "annee_sortie": 2001,
-    "etat": "Bon",
+    "etat": "Bon état",
     "emplacement": "Etagere C",
-    "valeur_estimee": 15,
-    "prix_achat": 5
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 52,
     "titre_jeu": "Super Mario Sunshine",
     "plateforme": "GCN",
     "annee_sortie": 2002,
-    "etat": "Moyen",
+    "etat": "Rayé",
     "emplacement": "Stock",
-    "valeur_estimee": 30,
-    "prix_achat": 10
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 53,
     "titre_jeu": "Luigi's Mansion",
     "plateforme": "GameCube",
     "annee_sortie": 2001,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Etagere H",
-    "valeur_estimee": 45,
-    "prix_achat": 15
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 54,
     "titre_jeu": "Zelda Wind Waker",
     "plateforme": "GC",
     "annee_sortie": 2002,
-    "etat": "Moyen",
+    "etat": "Collector",
     "emplacement": "Vitrine 1",
-    "valeur_estimee": 80,
-    "prix_achat": 30
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 55,
@@ -546,107 +546,137 @@
     "annee_sortie": 2002,
     "etat": "Excellent",
     "emplacement": "Etagere H",
-    "valeur_estimee": 25,
-    "prix_achat": 8
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 56,
     "titre_jeu": "Sonic Adventure 2",
     "plateforme": "Dreamcast",
     "annee_sortie": 2001,
-    "etat": "Bon",
+    "etat": "Bon état",
     "emplacement": "Etagere F",
-    "valeur_estimee": 45,
-    "prix_achat": 15
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 57,
     "titre_jeu": "Kingdom Hearts",
-    "plateforme": "PS2",
+    "plateforme": "PlayStation 2",
     "annee_sortie": 2002,
-    "etat": "Bon",
+    "etat": "Bon état",
     "emplacement": "Etagere C",
-    "valeur_estimee": 15,
-    "prix_achat": 5
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 58,
     "titre_jeu": "Okami",
     "plateforme": "PS2",
     "annee_sortie": 2006,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Etagere C",
-    "valeur_estimee": 30,
-    "prix_achat": 10
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 59,
     "titre_jeu": "Metal Gear Solid 3",
-    "plateforme": "PS2",
+    "plateforme": "PlayStation 2",
     "annee_sortie": 2004,
-    "etat": "Moyen",
+    "etat": "Livre Acier",
     "emplacement": "Vitrine 2",
-    "valeur_estimee": 50,
-    "prix_achat": 20
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 60,
     "titre_jeu": "Sim City 2000",
     "plateforme": "PC",
     "annee_sortie": 1993,
-    "etat": "Moyen",
+    "etat": "Boîte",
     "emplacement": "Reserve",
-    "valeur_estimee": 20,
-    "prix_achat": 2
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 61,
     "titre_jeu": "Pokemon Emeraude",
     "plateforme": "GBA",
     "annee_sortie": 2004,
-    "etat": "Moyen",
+    "etat": "Détaché",
     "emplacement": "Caisse 2",
-    "valeur_estimee": 60,
-    "prix_achat": 20
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 62,
     "titre_jeu": "Castlevania Aria of Sorrow",
     "plateforme": "GBA",
     "annee_sortie": 2003,
-    "etat": "Moyen",
+    "etat": "Neuf",
     "emplacement": "Vitrine 1",
-    "valeur_estimee": 120,
-    "prix_achat": 40
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 63,
     "titre_jeu": "Advance Wars",
     "plateforme": "Game Boy Advance",
     "annee_sortie": 2001,
-    "etat": "Bon",
+    "etat": "Bon état",
     "emplacement": "Etagere D",
-    "valeur_estimee": 35,
-    "prix_achat": 10
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 64,
     "titre_jeu": "Super Mario World",
     "plateforme": "SNES",
     "annee_sortie": 1990,
-    "etat": "Moyen",
+    "etat": "Jauni",
     "emplacement": "Stock",
-    "valeur_estimee": 25,
-    "prix_achat": 5
+    "valeur_estimee": 0,
+    "prix_achat": 0
   },
   {
     "id": 65,
     "titre_jeu": "Chrono Cross",
     "plateforme": "PS1",
     "annee_sortie": 1999,
-    "etat": "Moyen",
+    "etat": "Jauni",
     "emplacement": "Stock",
-    "valeur_estimee": 21,
-    "prix_achat": 68
+    "valeur_estimee": 0,
+    "prix_achat": 0
+  },
+  {
+    "id": 67,
+    "titre_jeu": "The Witcher 3: Wild Hunt",
+    "plateforme": "PC",
+    "annee_sortie": 2015,
+    "etat": "Neuf",
+    "emplacement": "Stock",
+    "valeur_estimee": 0,
+    "prix_achat": 0
+  },
+  {
+    "id": 68,
+    "titre_jeu": "Red Dead Redemption 2",
+    "plateforme": "PS4",
+    "annee_sortie": 2018,
+    "etat": "Occasion",
+    "emplacement": "Comptoir",
+    "valeur_estimee": 0,
+    "prix_achat": 0
+  },
+  {
+    "id": 69,
+    "titre_jeu": "Cyberpunk 2077",
+    "plateforme": "PC",
+    "annee_sortie": 2020,
+    "etat": "Neuf",
+    "emplacement": "Stock",
+    "valeur_estimee": 0,
+    "prix_achat": 0
   }
 ]
