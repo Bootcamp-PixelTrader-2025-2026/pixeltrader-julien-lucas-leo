@@ -5,7 +5,7 @@ Petit utilitaire pour convertir le fichier `stock.csv` en JSON.
 
 - Download the folder or clone the repository using
 ``` bash
-git clone https://github.com/LeoVigin/integration-web.git
+git clone https://github.com/Bootcamp-PixelTrader-2025-2026/pixeltrader-julien-lucas-leo.git
 ```
 - Open the project in any local development server.
 - Install dependencies
