@@ -153,51 +153,6 @@ function appliquerFiltres() {
   afficherJeux(filtres);
 }
 
-/* IMPORT DE FICHIERS */
-
-const btnImport = document.getElementById('btn-import');
-const fileInput = document.getElementById('file-input');
-const statusMsg = document.getElementById('import-status');
-
-function setStatus(message, type = '') {
-  statusMsg.textContent = message;
-  statusMsg.className = 'status-text';
-  if (type) statusMsg.classList.add(`status-${type}`);
-}
-
-btnImport.addEventListener('click', () => {
-  const file = fileInput.files[0];
-  if (!file) {
-    setStatus("Sélectionne un fichier d'abord.", 'error');
-    return;
-  }
-
-  const reader = new FileReader();
-  reader.onload = ({ target }) => {
-    try {
-      let nouveauxJeux = [];
-
-      if (file.name.endsWith('.csv')) {
-        nouveauxJeux = csvToJSON(target.result);
-      } else if (file.name.endsWith('.json')) {
-        nouveauxJeux = JSON.parse(target.result);
-      } else {
-        throw new Error('Format non supporté');
-      }
-
-      tousLesJeux = tousLesJeux.concat(nouveauxJeux);
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(tousLesJeux));
-
-      setStatus(`${nouveauxJeux.length} jeux ajoutés.`, 'success');
-      appliquerFiltres();
-    } catch (e) {
-      setStatus(e.message, 'error');
-    }
-  };
-
-  reader.readAsText(file);
-});
-
 /* RESET */
 
 document.getElementById('btn-reset').addEventListener('click', () => {
@@ -205,6 +160,48 @@ document.getElementById('btn-reset').addEventListener('click', () => {
   localStorage.removeItem(STORAGE_KEY);
   location.reload();
 });
+
+// IMPORT IMAGE
+// document.getElementById('btn-import-img').addEventListener('click', async () => {
+//   const fileInput = document.getElementById('image-input');
+//   const statusEl = document.getElementById('import-img-status');
+
+//   if (!fileInput.files[0]) {
+//     statusEl.textContent = 'Aucun fichier sélectionné';
+//     statusEl.className = 'status-error';
+//     return;
+//   }
+
+//   const file = fileInput.files[0];
+//   const formData = new FormData();
+//   formData.append('image', file);
+
+//   try {
+//     statusEl.textContent = 'Import en cours...';
+//     statusEl.className = 'status-text';
+
+//     // Upload image, we don't care about JSON response
+//     const response = await fetch('/import-image', {
+//       method: 'POST',
+//       body: formData,
+//     });
+
+//     if (response.ok) {
+//       statusEl.textContent = `✅ Image importée avec succès !`;
+//       statusEl.className = 'status-success';
+//       // Optional: reload page to show new image
+//       setTimeout(() => location.reload(), 1000);
+//     } else {
+//       statusEl.textContent = `❌ Erreur lors de l'import`;
+//       statusEl.className = 'status-error';
+//     }
+//   } catch (err) {
+//     statusEl.textContent = `❌ Erreur: ${err.message}`;
+//     statusEl.className = 'status-error';
+//   }
+// });
+
+
 
 /* IMPORT CSV */
 

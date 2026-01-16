@@ -39,13 +39,23 @@
     </section>
 
     <section class="import-zone">
-      <h2>Import de Données</h2>
-      <div class="import-controls">
-        <input type="file" id="file-input" accept=".csv, .json" /><button id="btn-import">AJOUTER</button>
-      </div>
-      <p id="import-status" class="status-text"></p>
-      <button id="btn-reset">⚠ Réinitialiser</button>
+      <div>
+        <h2>Import de Données</h2>
+        <div class="import-controls">
+          <input type="file" id="file-input" accept=".csv, .json" /><button id="btn-import">AJOUTER</button>
+        </div>
+        <p id="import-status" class="status-text"></p>
+        </div>
+        <div>
+          <h2>Import d'Images</h2>
+          <div class="import-controls">
+            <input type="file" id="image-input" accept=".png, .jpg" /><button id="btn-import-img">AJOUTER</button>
+            <p id="import-img-status" class="status-text"></p>
+          </div>
+        </div>
     </section>
+    <button id="btn-reset">⚠ Réinitialiser</button>
+
 
     <div id="result"><p>Chargement...</p></div>
   </body>
